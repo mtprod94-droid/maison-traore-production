@@ -1531,6 +1531,30 @@ a {
         padding: 28px 22px;
     }
     
+        .episode-detail-content {
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+
+        margin-top: 35px;
+    }
+
+    .episode-number {
+        font-size: 65px;
+
+        letter-spacing: -3px;
+    }
+
+    .episode-description {
+        padding-left: 22px;
+    }
+
+    .episode-description p {
+        font-size: 15px;
+
+        line-height: 1.8;
+    }
+    
 /* =========================================
    SMALL PHONES
 ========================================= */
@@ -1821,4 +1845,62 @@ a {
     font-size: 18px;
 
     line-height: 1.4;
+}
+
+/* =========================================
+   LE VERRAT D'UN AMI — EPISODE DETAIL
+========================================= */
+
+.episode-detail {
+    background: #080808;
+}
+
+.episode-detail-content {
+    display: grid;
+
+    grid-template-columns: 140px 1fr;
+
+    gap: 50px;
+
+    max-width: 950px;
+
+    margin-top: 50px;
+
+    align-items: start;
+}
+
+.episode-number {
+    color: #c9a96e;
+
+    font-size: 90px;
+
+    font-weight: 300;
+
+    line-height: 0.9;
+
+    letter-spacing: -5px;
+
+    opacity: 0.8;
+}
+
+.episode-description {
+    max-width: 700px;
+
+    border-left: 1px solid rgba(201, 169, 110, 0.35);
+
+    padding-left: 35px;
+}
+
+.episode-description p {
+    margin-bottom: 25px;
+
+    color: rgba(255, 255, 255, 0.65);
+
+    font-size: 16px;
+
+    line-height: 1.9;
+}
+
+.episode-description p:last-child {
+    margin-bottom: 0;
 }
