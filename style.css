@@ -195,7 +195,11 @@ a {
 
 .hero-buttons {
     display: flex;
+
+    align-items: center;
+
     gap: 15px;
+
     flex-wrap: wrap;
 }
 
@@ -222,20 +226,30 @@ a {
 
 .btn-primary {
     background: #c9a96e;
-    color: #080808;
+
+    color: #050505;
+
+    border: 1px solid #c9a96e;
 }
 
 .btn-primary:hover {
-    background: #ffffff;
+    background: transparent;
+
+    color: #c9a96e;
 }
 
 .btn-secondary {
-    border: 1px solid rgba(255, 255, 255, 0.35);
+    background: transparent;
+
+    color: #ffffff;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .btn-secondary:hover {
-    background: white;
-    color: #080808;
+    border-color: #c9a96e;
+
+    color: #c9a96e;
 }
 
 
@@ -930,6 +944,14 @@ a {
 ========================================= */
 
 @media (max-width: 800px) {
+    
+        .hero-buttons {
+        width: 100%;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+    }
     
         .hero h1 {
         font-size: 52px;
