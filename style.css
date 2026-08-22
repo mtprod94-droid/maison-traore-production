@@ -161,23 +161,31 @@ a {
 }
 
 .hero h1 {
-    font-size: clamp(45px, 8vw, 90px);
+    max-width: 900px;
 
-    line-height: 0.95;
+    font-size: clamp(50px, 9vw, 110px);
 
-    letter-spacing: -2px;
+    line-height: 0.88;
 
-    margin-bottom: 30px;
+    letter-spacing: -4px;
+
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    margin-bottom: 35px;
 }
 
 .hero-text {
-    max-width: 560px;
+    max-width: 580px;
 
     font-size: 18px;
 
-    color: rgba(255, 255, 255, 0.72);
+    line-height: 1.75;
 
-    margin-bottom: 40px;
+    color: rgba(255, 255, 255, 0.68);
+
+    margin-bottom: 45px;
 }
 
 
