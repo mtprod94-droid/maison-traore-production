@@ -298,6 +298,19 @@ a {
     background: #080808;
 }
 
+.production-intro {
+    max-width: 650px;
+
+    margin-top: -25px;
+    margin-bottom: 50px;
+
+    color: rgba(255, 255, 255, 0.6);
+
+    font-size: 17px;
+
+    line-height: 1.8;
+}
+
 .production-grid {
     display: grid;
 
