@@ -1597,3 +1597,119 @@ a {
     }
 
 }
+
+/* =========================================
+   LE MASQUE — FILM POSTER
+========================================= */
+
+.film-poster {
+    padding: 40px 8% 80px;
+
+    background: #080808;
+}
+
+.film-poster-container {
+    max-width: 900px;
+
+    margin: 0 auto;
+}
+
+.film-poster-placeholder {
+    min-height: 520px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding: 60px 30px;
+
+    background:
+        radial-gradient(
+            circle at center,
+            #242424 0%,
+            #0b0b0b 65%,
+            #050505 100%
+        );
+
+    border: 1px solid rgba(201, 169, 110, 0.25);
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+.film-poster-placeholder::before {
+    content: "";
+
+    position: absolute;
+
+    inset: 20px;
+
+    border: 1px solid rgba(201, 169, 110, 0.15);
+
+    pointer-events: none;
+}
+
+.film-poster-placeholder span {
+    color: #c9a96e;
+
+    font-size: 10px;
+
+    font-weight: bold;
+
+    letter-spacing: 5px;
+
+    margin-bottom: 25px;
+
+    position: relative;
+}
+
+.film-poster-placeholder h2 {
+    font-size: clamp(50px, 10vw, 110px);
+
+    line-height: 0.9;
+
+    letter-spacing: -4px;
+
+    margin-bottom: 25px;
+
+    position: relative;
+}
+
+.film-poster-placeholder p {
+    color: rgba(255, 255, 255, 0.5);
+
+    font-size: 12px;
+
+    letter-spacing: 3px;
+
+    text-transform: uppercase;
+
+    position: relative;
+}
+
+@media (max-width: 800px) {
+
+    .film-poster {
+        padding: 20px 5% 60px;
+    }
+
+    .film-poster-placeholder {
+        min-height: 420px;
+
+        padding: 40px 20px;
+    }
+
+    .film-poster-placeholder h2 {
+        font-size: 60px;
+
+        letter-spacing: -2px;
+    }
+
+}
