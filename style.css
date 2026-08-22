@@ -1559,6 +1559,16 @@ a {
         padding: 28px 22px;
     }
     
+        .season-intro {
+        margin: 25px 0 35px;
+
+        padding-left: 18px;
+
+        font-size: 15px;
+
+        line-height: 1.7;
+    }
+    
 /* =========================================
    SMALL PHONES
 ========================================= */
@@ -1961,4 +1971,24 @@ a {
     line-height: 1.7;
 
     margin-bottom: 25px;
+}
+
+/* =========================================
+   LE VERRAT D'UN AMI — SEASON INTRO
+========================================= */
+
+.season-intro {
+    max-width: 700px;
+
+    margin: 35px 0 50px;
+
+    color: rgba(255, 255, 255, 0.6);
+
+    font-size: 16px;
+
+    line-height: 1.8;
+
+    border-left: 2px solid #c9a96e;
+
+    padding-left: 25px;
 }
