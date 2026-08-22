@@ -1511,6 +1511,17 @@ a {
     }
 }
 
+    .film-story-content {
+        margin-top: 35px;
+
+        padding-left: 22px;
+    }
+
+    .film-story-content p {
+        font-size: 15px;
+
+        line-height: 1.8;
+    }
 
 /* =========================================
    SMALL PHONES
@@ -1712,4 +1723,44 @@ a {
         letter-spacing: -2px;
     }
 
+}
+
+/* =========================================
+   LE MASQUE — STORY
+========================================= */
+
+.film-story {
+    background: #0a0a0a;
+}
+
+.film-story-content {
+    max-width: 850px;
+
+    margin-top: 50px;
+
+    border-left: 2px solid #c9a96e;
+
+    padding-left: 35px;
+}
+
+.film-story-content p {
+    max-width: 750px;
+
+    margin-bottom: 28px;
+
+    color: rgba(255, 255, 255, 0.65);
+
+    font-size: 17px;
+
+    line-height: 1.9;
+}
+
+.film-story-content p:last-child {
+    margin-bottom: 0;
+}
+
+.film-story-content strong {
+    color: #ffffff;
+
+    font-weight: 600;
 }
