@@ -1523,6 +1523,14 @@ a {
         line-height: 1.8;
     }
 
+    .film-production-content {
+        grid-template-columns: 1fr;
+    }
+
+    .film-production-item {
+        padding: 28px 22px;
+    }
+    
 /* =========================================
    SMALL PHONES
 ========================================= */
@@ -1763,4 +1771,54 @@ a {
     color: #ffffff;
 
     font-weight: 600;
+}
+
+/* =========================================
+   LE MASQUE — PRODUCTION
+========================================= */
+
+.film-production {
+    background: #080808;
+}
+
+.film-production-content {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 1px;
+
+    margin-top: 50px;
+
+    background: rgba(255, 255, 255, 0.08);
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.film-production-item {
+    padding: 35px 30px;
+
+    background: #0d0d0d;
+}
+
+.film-production-item span {
+    display: block;
+
+    margin-bottom: 15px;
+
+    color: #c9a96e;
+
+    font-size: 10px;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+}
+
+.film-production-item h3 {
+    color: #ffffff;
+
+    font-size: 18px;
+
+    line-height: 1.4;
 }
