@@ -1992,3 +1992,19 @@ a {
 
     padding-left: 25px;
 }
+
+/* =========================================
+   LE VERRAT D'UN AMI — EPISODE SECTIONS
+========================================= */
+
+.episode-detail:nth-of-type(even) {
+    background: #0d0d0d;
+}
+
+.episode-detail:nth-of-type(odd) {
+    background: #080808;
+}
+
+.episode-detail + .episode-detail {
+    border-top: 1px solid rgba(255, 255, 255, 0.04);
+}
