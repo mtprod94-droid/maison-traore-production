@@ -488,7 +488,93 @@ a {
 /* =========================================
    TEAM CARDS
 ========================================= */
+/* =========================================
+   FOUNDER / PDG
+========================================= */
 
+.team-founder {
+    display: grid;
+
+    grid-template-columns: 100px 1fr;
+
+    gap: 50px;
+
+    max-width: 1000px;
+
+    margin-top: 55px;
+
+    padding: 55px;
+
+    background: #111111;
+
+    border: 1px solid rgba(201, 169, 110, 0.22);
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+.team-founder::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 3px;
+    height: 100%;
+
+    background: #c9a96e;
+}
+
+.team-founder-number {
+    color: #c9a96e;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+
+    padding-top: 5px;
+}
+
+.team-founder-content {
+    max-width: 700px;
+}
+
+.team-founder-content > span {
+    color: #c9a96e;
+
+    font-size: 10px;
+
+    font-weight: bold;
+
+    letter-spacing: 4px;
+}
+
+.team-founder-content h3 {
+    margin: 15px 0 25px;
+
+    font-size: clamp(38px, 6vw, 72px);
+
+    line-height: 1;
+
+    letter-spacing: -2px;
+}
+
+.team-founder-content p {
+    max-width: 650px;
+
+    color: rgba(255, 255, 255, 0.62);
+
+    font-size: 16px;
+
+    line-height: 1.8;
+
+    margin-bottom: 18px;
+}
 .team-grid {
     display: grid;
 
@@ -754,6 +840,22 @@ a {
 ========================================= */
 
 @media (max-width: 800px) {
+    
+        .team-founder {
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+
+        margin-top: 40px;
+
+        padding: 35px 25px;
+    }
+
+    .team-founder-content h3 {
+        font-size: 42px;
+
+        letter-spacing: -1px;
+    }
     
         .contact-links {
         grid-template-columns: 1fr;
