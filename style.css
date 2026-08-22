@@ -461,6 +461,32 @@ a {
     transition: 0.4s ease;
 }
 
+.production-feature::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 3px;
+
+    background: #c9a96e;
+
+    transform: scaleX(0);
+
+    transform-origin: left;
+
+    transition: 0.4s ease;
+
+    z-index: 3;
+}
+
+.production-feature:hover::before {
+    transform: scaleX(1);
+}
+
 .production-feature:hover {
     transform: translateY(-6px);
 
