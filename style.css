@@ -616,6 +616,137 @@ a {
 }
 
 /* =========================================
+   CASTING FORM
+========================================= */
+
+.casting-form {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 22px;
+
+    margin-top: 35px;
+
+    width: 100%;
+}
+
+.form-group {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 9px;
+}
+
+.form-row {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 18px;
+}
+
+.form-group label {
+    color: rgba(255, 255, 255, 0.75);
+
+    font-size: 10px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+
+    padding: 15px 16px;
+
+    background: #0a0a0a;
+
+    color: #ffffff;
+
+    border: 1px solid rgba(255, 255, 255, 0.12);
+
+    border-radius: 0;
+
+    outline: none;
+
+    font-family: inherit;
+
+    font-size: 14px;
+
+    transition: 0.3s ease;
+
+    box-sizing: border-box;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #c9a96e;
+
+    background: #0d0d0d;
+}
+
+.form-group textarea {
+    resize: vertical;
+
+    min-height: 120px;
+}
+
+.form-group select {
+    appearance: none;
+
+    cursor: pointer;
+}
+
+.form-consent {
+    margin-top: 3px;
+}
+
+.form-consent label {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 10px;
+
+    color: rgba(255, 255, 255, 0.5);
+
+    font-size: 12px;
+
+    line-height: 1.6;
+
+    cursor: pointer;
+}
+
+.form-consent input {
+    margin-top: 3px;
+
+    accent-color: #c9a96e;
+
+    cursor: pointer;
+}
+
+.casting-form .btn {
+    align-self: flex-start;
+
+    border: none;
+
+    cursor: pointer;
+}
+
+/* =========================================
    ABOUT
 ========================================= */
 
@@ -1365,6 +1496,18 @@ a {
         font-size: 40px;
 
         letter-spacing: -1px;
+    }
+    
+        .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .casting-form {
+        gap: 18px;
+    }
+
+    .casting-form .btn {
+        width: 100%;
     }
 }
 
