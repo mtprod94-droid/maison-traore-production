@@ -369,15 +369,186 @@
                 casting ou une collaboration, contactez
                 directement notre production.
             </p>
+            
+            <form class="casting-form" id="casting-form">
+
+    <div class="form-group">
+
+        <label for="name">
+            Nom et prénom
+        </label>
+
+        <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Votre nom complet"
+            required
+        >
+
+    </div>
 
 
-            <a
-                href="https://wa.me/22890509669"
-                class="btn btn-primary"
-                target="_blank"
+    <div class="form-row">
+
+        <div class="form-group">
+
+            <label for="age">
+                Âge
+            </label>
+
+            <input
+                type="number"
+                id="age"
+                name="age"
+                placeholder="Votre âge"
+                min="16"
+                max="100"
+                required
             >
-                Contacter la production
-            </a>
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label for="city">
+                Ville / Pays
+            </label>
+
+            <input
+                type="text"
+                id="city"
+                name="city"
+                placeholder="Ex. Lomé, Togo"
+                required
+            >
+
+        </div>
+
+    </div>
+
+
+    <div class="form-group">
+
+        <label for="phone">
+            Téléphone / WhatsApp
+        </label>
+
+        <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="+228 ..."
+            required
+        >
+
+    </div>
+
+
+    <div class="form-group">
+
+        <label for="profile">
+            Profil
+        </label>
+
+        <select
+            id="profile"
+            name="profile"
+            required
+        >
+
+            <option value="">
+                Sélectionnez votre profil
+            </option>
+
+            <option value="Acteur">
+                Acteur
+            </option>
+
+            <option value="Actrice">
+                Actrice
+            </option>
+
+            <option value="Mannequin">
+                Mannequin
+            </option>
+
+            <option value="Figurant">
+                Figurant(e)
+            </option>
+
+            <option value="Autre">
+                Autre
+            </option>
+
+        </select>
+
+    </div>
+
+
+    <div class="form-group">
+
+        <label for="experience">
+            Expérience
+        </label>
+
+        <textarea
+            id="experience"
+            name="experience"
+            rows="4"
+            placeholder="Parlez-nous brièvement de votre expérience..."
+        ></textarea>
+
+    </div>
+
+
+    <div class="form-group">
+
+        <label for="message">
+            Message
+        </label>
+
+        <textarea
+            id="message"
+            name="message"
+            rows="5"
+            placeholder="Pourquoi souhaitez-vous rejoindre Maison Traoré Production ?"
+            required
+        ></textarea>
+
+    </div>
+
+
+    <div class="form-consent">
+
+        <label>
+
+            <input
+                type="checkbox"
+                name="consent"
+                required
+            >
+
+            <span>
+                J'accepte d'être contacté(e) par
+                Maison Traoré Production concernant
+                ma candidature.
+            </span>
+
+        </label>
+
+    </div>
+
+
+    <button
+        type="submit"
+        class="btn btn-primary"
+    >
+        Envoyer ma candidature
+    </button>
+
+</form>
 
         </div>
 
