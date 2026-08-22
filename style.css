@@ -1555,6 +1555,10 @@ a {
         line-height: 1.8;
     }
     
+        .productions .production-card .production-info {
+        padding: 28px 22px;
+    }
+    
 /* =========================================
    SMALL PHONES
 ========================================= */
@@ -1903,4 +1907,58 @@ a {
 
 .episode-description p:last-child {
     margin-bottom: 0;
+}
+
+/* =========================================
+   LE VERRAT D'UN AMI — EPISODE CARDS
+========================================= */
+
+.productions .production-card {
+    position: relative;
+
+    overflow: hidden;
+}
+
+.productions .production-card::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 3px;
+    height: 100%;
+
+    background: #c9a96e;
+
+    opacity: 0.7;
+}
+
+.productions .production-card .production-info {
+    padding: 35px 30px;
+}
+
+.productions .production-card .production-info span {
+    color: #c9a96e;
+
+    font-size: 10px;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+}
+
+.productions .production-card .production-info h3 {
+    margin-top: 12px;
+
+    margin-bottom: 15px;
+}
+
+.productions .production-card .production-info p {
+    color: rgba(255, 255, 255, 0.6);
+
+    line-height: 1.7;
+
+    margin-bottom: 25px;
 }
