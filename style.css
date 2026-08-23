@@ -1569,6 +1569,9 @@ a {
         line-height: 1.7;
     }
     
+        .film-poster-image {
+        width: 100%;
+    }
 /* =========================================
    SMALL PHONES
 ========================================= */
@@ -2007,4 +2010,25 @@ a {
 
 .episode-detail + .episode-detail {
     border-top: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+/* =========================================
+   LE MASQUE — OFFICIAL POSTER
+========================================= */
+
+.film-poster-image {
+    display: block;
+
+    width: 100%;
+
+    max-width: 650px;
+
+    height: auto;
+
+    margin: 0 auto;
+
+    border: 1px solid rgba(201, 169, 110, 0.25);
+
+    box-shadow:
+        0 30px 80px rgba(0, 0, 0, 0.6);
 }
