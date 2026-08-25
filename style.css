@@ -2032,3 +2032,27 @@ a {
     box-shadow:
         0 30px 80px rgba(0, 0, 0, 0.6);
 }
+
+/* =========================================
+   PRODUCTION FEATURE — FILM POSTER
+========================================= */
+
+.production-feature-image {
+    width: 100%;
+    overflow: hidden;
+}
+
+.production-feature-image img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    object-fit: cover;
+
+    transition: transform 0.5s ease;
+}
+
+.production-feature:hover .production-feature-image img {
+    transform: scale(1.03);
+}
