@@ -1572,6 +1572,20 @@ a {
         .film-poster-image {
         width: 100%;
     }
+    
+        .characters-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        margin-top: 35px;
+    }
+
+    .character-card {
+        padding: 35px 25px;
+    }
+
+    .character-card h3 {
+        font-size: 24px;
+    }
 /* =========================================
    SMALL PHONES
 ========================================= */
@@ -2055,4 +2069,70 @@ a {
 
 .production-feature:hover .production-feature-image img {
     transform: scale(1.03);
+}
+
+/* =========================================
+   LE MASQUE — PERSONNAGES
+========================================= */
+
+.characters {
+    position: relative;
+}
+
+.characters-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2px;
+    margin-top: 50px;
+}
+
+.character-card {
+    position: relative;
+
+    padding: 45px 35px;
+
+    background: rgba(255, 255, 255, 0.025);
+
+    border: 1px solid rgba(201, 169, 110, 0.15);
+
+    transition:
+        transform 0.4s ease,
+        border-color 0.4s ease,
+        background 0.4s ease;
+}
+
+.character-card:hover {
+    transform: translateY(-5px);
+
+    background: rgba(255, 255, 255, 0.04);
+
+    border-color: rgba(201, 169, 110, 0.45);
+}
+
+.character-card > span {
+    display: block;
+
+    margin-bottom: 25px;
+
+    font-size: 12px;
+
+    letter-spacing: 3px;
+
+    opacity: 0.5;
+}
+
+.character-card h3 {
+    margin-bottom: 15px;
+
+    font-size: 28px;
+
+    letter-spacing: 1px;
+}
+
+.character-card p {
+    max-width: 500px;
+
+    line-height: 1.8;
+
+    opacity: 0.7;
 }
