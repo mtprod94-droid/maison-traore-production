@@ -1586,6 +1586,22 @@ a {
     .character-card h3 {
         font-size: 24px;
     }
+    
+        .film-universe-content {
+        grid-template-columns: 1fr;
+        gap: 35px;
+        margin-top: 35px;
+    }
+
+    .film-universe-text {
+        max-width: 100%;
+    }
+
+    .film-universe-text strong {
+        font-size: 10px;
+        letter-spacing: 3px;
+    }
+    
 /* =========================================
    SMALL PHONES
 ========================================= */
@@ -2135,4 +2151,70 @@ a {
     line-height: 1.8;
 
     opacity: 0.7;
+}
+
+/* =========================================
+   LE MASQUE — L'UNIVERS DU FILM
+========================================= */
+
+.film-universe {
+    position: relative;
+}
+
+.film-universe-content {
+    margin-top: 50px;
+
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+
+    gap: 50px;
+
+    align-items: center;
+}
+
+.film-universe-image {
+    overflow: hidden;
+
+    border: 1px solid rgba(201, 169, 110, 0.25);
+}
+
+.film-universe-image img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    object-fit: cover;
+
+    transition: transform 0.6s ease;
+}
+
+.film-universe-image:hover img {
+    transform: scale(1.03);
+}
+
+.film-universe-text {
+    max-width: 500px;
+}
+
+.film-universe-text p {
+    margin-bottom: 25px;
+
+    line-height: 1.8;
+
+    opacity: 0.75;
+}
+
+.film-universe-text strong {
+    display: block;
+
+    margin-top: 35px;
+
+    font-size: 12px;
+
+    letter-spacing: 4px;
+
+    font-weight: 500;
+
+    opacity: 0.85;
 }
